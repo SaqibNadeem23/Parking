@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Parking.SignUp" BackgroundColor="WhiteSmoke">
+
+    <ScrollView>
+        <StackLayout>
+
+            <StackLayout HeightRequest="50" HorizontalOptions="Center">
+                <Label Text="Sign Up" Margin="0,30,0,0" TextColor="#0275d8" FontSize="Title" HorizontalOptions="Center"></Label>
+            </StackLayout>
+
+
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                <Entry x:Name="usnm" Margin="0,30,0,0" PlaceholderColor="#0275d8" TextColor="Black" Placeholder="Username" />
+
+                <Entry x:Name="em" Margin="0,10,0,0" WidthRequest="280" PlaceholderColor="#0275d8" TextColor="Black" Placeholder="Email" />
+
+                <Entry x:Name="nm" Margin="0,10,0,0"  PlaceholderColor="#0275d8" TextColor="Black" Placeholder="Full Name" />
+
+                <Entry x:Name="ph"  Margin="0,10,0,0" PlaceholderColor="#0275d8" TextColor="Black" Keyboard="Numeric" MaxLength="11" WidthRequest="280" Placeholder="Phone Number" />
+
+                <Entry x:Name="pass" Margin="0,10,0,0" WidthRequest="280"  PlaceholderColor="#0275d8" TextColor="Black" Placeholder="Password" IsPassword="True"/>
+
+                <Entry x:Name="cpass" Margin="0,10,0,0" PlaceholderColor="#0275d8" TextColor="Black" Placeholder="Confirm Password" IsPassword="True" />
+
+                <Button x:Name="Sgn" Margin="0,30,0,0" Clicked="Sgn_Clicked"  Text="Sign Up" TextColor="Black" BackgroundColor="#0275d8"></Button>
+
+            </StackLayout>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

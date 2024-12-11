@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Parking.AddParking"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             BackgroundColor="WhiteSmoke">
+
+    
+   
+    <StackLayout x:Name="Add">
+        <StackLayout>
+            <Label TextColor="#1b1b1b" FontSize="Medium" HorizontalTextAlignment="Center" Text="Tap to Select Parking Location"></Label>
+            <maps:Map x:Name="map" MapClicked="map_MapClicked"  HeightRequest="250" IsShowingUser="True" Margin="0,10" MapType="Street" HasZoomEnabled="True"  HasScrollEnabled="True">
+
+            </maps:Map>
+        </StackLayout>
+        <ScrollView>
+            
+                <StackLayout Margin="5,5">
+               
+                <Entry TextColor="#1b1b1b" Placeholder="Parking Name" PlaceholderColor="#1b1b1b" x:Name="NameEntry"></Entry>
+
+                <StackLayout x:Name="slotsstack" Orientation="Horizontal" IsVisible="false">
+                    <StackLayout HorizontalOptions="FillAndExpand">
+                        <Entry TextColor="#1b1b1b" x:Name="BikeSlotsFilled" HorizontalTextAlignment="Center" Placeholder="Bike Slots Filled" PlaceholderColor="#1b1b1b"  Keyboard="Numeric"></Entry>
+                    </StackLayout>
+                    <StackLayout HorizontalOptions="FillAndExpand">
+                        <Entry x:Name="CarSlotsFilled" Placeholder="Car Slots Filled" HorizontalTextAlignment="Center" PlaceholderColor="#1b1b1b"  TextColor="#1b1b1b"  Keyboard="Numeric"></Entry>
+                    </StackLayout>
+                </StackLayout> 
+                    
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout HorizontalOptions="FillAndExpand">
+                        <Entry TextColor="#1b1b1b" x:Name="CarSlotsEntry" HorizontalTextAlignment="Center" Placeholder="Car Slots" PlaceholderColor="#1b1b1b"  Keyboard="Numeric"></Entry>
+                    </StackLayout>
+                    <StackLayout HorizontalOptions="FillAndExpand">
+                        <Entry x:Name="CarFeesEntry" Placeholder="Car Fees" HorizontalTextAlignment="Center" PlaceholderColor="#1b1b1b"  TextColor="#1b1b1b"  Keyboard="Numeric"></Entry>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout HorizontalOptions="FillAndExpand">
+                        <Entry TextColor="#1b1b1b" Placeholder="Bike Slots" HorizontalTextAlignment="Center" PlaceholderColor="#1b1b1b" x:Name="BikeSlotsEntry"  Keyboard="Numeric"></Entry>
+                    </StackLayout>
+                    <StackLayout HorizontalOptions="FillAndExpand">
+                        <Entry x:Name="BikeFeesEntry" Placeholder="Bike Fees" HorizontalTextAlignment="Center" PlaceholderColor="#1b1b1b" TextColor="#1b1b1b" Keyboard="Numeric"></Entry>
+                    </StackLayout>
+
+                </StackLayout>
+
+                <Button Text="Upload Parking Picture" TextColor="#1b1b1b" BackgroundColor="#0275d8" Margin="70,0" WidthRequest="40" HeightRequest="40" Clicked="Button_Clicked_1"></Button>
+                <Frame CornerRadius="100" HeightRequest="100" WidthRequest="100" Padding="0" IsClippedToBounds="True" HorizontalOptions="Center">
+                    <Image x:Name="img2" Aspect="Fill">
+                    </Image>
+                </Frame>
+
+
+                <Button x:Name="btn1" Text="Create" TextColor="#1b1b1b" BackgroundColor="#0275d8" WidthRequest="40" HeightRequest="50" Clicked="Button_Clicked"></Button>
+                   <Button x:Name="btn2" IsVisible="false" Text="Edit" TextColor="#1b1b1b" BackgroundColor="#0275d8" WidthRequest="40" HeightRequest="50" Clicked="btns1_Clicked"></Button>
+            </StackLayout>
+            
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

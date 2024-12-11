@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Parking.UserInfo">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Edit Info" Clicked="ToolbarItem_Clicked"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+
+    <StackLayout>
+        <Frame>
+            <StackLayout Margin="30,30">
+                <Label TextColor="#0275d8" FontSize="Medium" Text="Full Name"></Label>
+                <Entry TextColor="#0275d8"  x:Name="e1"></Entry>
+                <Label TextColor="#0275d8" FontSize="Medium" Text="Email"></Label>
+                <Entry TextColor="#0275d8" x:Name="e2"></Entry>
+                <Label TextColor="#0275d8" FontSize="Medium" Text="Phone Number"></Label>
+                <Entry TextColor="#0275d8" x:Name="e3" Keyboard="Numeric"></Entry>
+                <Label TextColor="#0275d8" FontSize="Medium" Text="Password"></Label>
+                <Entry TextColor="#0275d8" x:Name="e4" IsPassword="True"></Entry>
+
+                <Button x:Name="btn" Text="Update" BackgroundColor="#0275d8" TextColor="WhiteSmoke" WidthRequest="40" HeightRequest="40" Clicked="Button_Clicked"></Button>
+
+            </StackLayout>
+        </Frame>
+
+    </StackLayout>
+</ContentPage>

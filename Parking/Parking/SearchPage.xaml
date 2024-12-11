@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Parking.SearchPage"
+            xmlns:google="clr-namespace:SearchPlaces;assembly=SearchPlaces"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="DarkBlue">
+                <Frame  BorderColor="DarkBlue" CornerRadius="5">
+                    <StackLayout Orientation="Horizontal">
+                        <StackLayout HorizontalOptions="End">
+                            <Image Source="searchlogo.png" HeightRequest="30" WidthRequest="30"/>
+                        </StackLayout>
+                        <StackLayout HorizontalOptions="FillAndExpand">
+                    <Entry x:Name="srch" PlaceholderColor="Black" HorizontalOptions="FillAndExpand"></Entry>
+                    
+                    
+                </StackLayout>
+                <StackLayout HorizontalOptions="End">
+                    <Image Source="GoCar.png" HeightRequest="50" WidthRequest="50">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="srch_SearchButtonPressed">
+
+                            </TapGestureRecognizer>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </StackLayout>
+            </StackLayout>
+                </Frame>
+            </Frame>
+            <ScrollView>
+            <StackLayout x:Name="stk">
+                
+            </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
