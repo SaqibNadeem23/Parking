@@ -19,7 +19,7 @@ namespace Parking
     public partial class SearchPage : ContentPage
     {
         string SId, SName, SEmail, SPhone, SPass;
-        string GooglePlacesApiKey = "AIzaSyDd6E_Bd7fJBxDfMkCOtgH4wj7mb1VQdPY";
+        string GooglePlacesApiKey = "enter your api key";
         Location loc;
 
 
