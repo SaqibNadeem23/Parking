@@ -19,7 +19,7 @@
   <uses-feature android:name="android.hardware.location.gps" android:required="false" />
   <uses-feature android:name="android.hardware.location.network" android:required="false" />
   <application android:label="Parking.Android" android:theme="@style/MainTheme" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon" android:extractNativeLibs="true">
-    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyDd6E_Bd7fJBxDfMkCOtgH4wj7mb1VQdPY" />
+    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="" />
     <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
     <uses-library android:name="org.apache.http.legacy" android:required="false" />
     <activity android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@mipmap/icon" android:label="Parking" android:theme="@style/MainTheme" android:name="crc6476b494bd96b1cdae.MainActivity" android:exported="true">
